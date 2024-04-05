@@ -1,7 +1,13 @@
 import { ReactNode } from 'react';
 
-export const Section = ({ children }: { children: ReactNode }) => {
-  return <section className="container py-28">{children}</section>;
+export const Section = ({
+  children,
+  styles,
+}: {
+  children: ReactNode;
+  styles?: string;
+}) => {
+  return <section className={`container py-28 ${styles}`}>{children}</section>;
 };
 
 export const SectionTitle = ({ title }: { title: string }) => {

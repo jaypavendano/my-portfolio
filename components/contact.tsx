@@ -18,7 +18,7 @@ export default function Contact() {
     </>
   ) : (
     <>
-      I'm
+      I&apos;m
       <span className=" text-primary">
         {' '}
         actively seeking new opportunities,{' '}

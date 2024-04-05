@@ -19,8 +19,8 @@ export default function Banner() {
           </h1>
         </div>
         <p className="text-lg">
-          I'm a web developer committed to crafting seamless user experiences
-          and adept at creating API-driven products.
+          I&apos;m a web developer committed to crafting seamless user
+          experiences and adept at creating API-driven products.
         </p>
       </motion.div>
     </section>

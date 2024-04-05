@@ -1,3 +1,5 @@
+'use client';
+
 import { Section, SectionTitle } from '@/app/constant';
 import Image from 'next/image';
 import {
@@ -6,6 +8,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { motion } from 'framer-motion';
+
 interface TechDataTypes {
   key: number;
   img: string;
@@ -68,24 +72,32 @@ const techData: TechDataTypes[] = [
 
 const TechnologyList = () => (
   <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16 relative">
-    {techData.map((item) => (
-      <TooltipProvider key={item.key}>
-        <Tooltip>
-          <TooltipTrigger>
-            <div>
-              <Image
-                src={item.img}
-                alt={item.name}
-                width={item.width}
-                height={item.height}
-              />
-            </div>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>{item.name}</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+    {techData.map((item, index) => (
+      <motion.div
+        key={item.key}
+        viewport={{ once: true }}
+        initial={{ translateX: -32, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 1.8, delay: index * 0.2, bounce: 0 }}
+      >
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <div>
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  width={item.width}
+                  height={item.height}
+                />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{item.name}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </motion.div>
     ))}
   </div>
 );
@@ -98,12 +110,19 @@ export default function Technologies() {
     <Section>
       <SectionTitle title="Technologies I mainly use" />
       <TechnologyList />
-      <p className="text-center mt-10">
-        Other technologies I used are <Span name="React Native" />,
-        <Span name="Nodejs" />,
-        <Span name="Express" />,<Span name="Git" />, <Span name="Postman" /> and{' '}
-        <Span name="Figma" />.
-      </p>
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5, bounce: 0 }}
+      >
+        <p className="text-center mt-10">
+          Other technologies I used are <Span name="React Native" />,
+          <Span name="Nodejs" />,
+          <Span name="Express" />,<Span name="Git" />, <Span name="Postman" />{' '}
+          and <Span name="Figma" />.
+        </p>
+      </motion.div>
     </Section>
   );
 }

@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config = {
   darkMode: ['class'],
+  mode: 'jit',
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -18,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        '1350': '1350px',
+      },
       backgroundImage: {
         ellipse: "url('/ellipse.png')",
         'gradient-linear-right':

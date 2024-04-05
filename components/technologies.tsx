@@ -17,49 +17,49 @@ interface TechDataTypes {
 const techData: TechDataTypes[] = [
   {
     key: 1,
-    img: '/js.svg',
+    img: '/tech/js.svg',
     name: 'Javascript',
     width: 39.57,
     height: 39.57,
   },
   {
     key: 2,
-    img: '/ts.svg',
+    img: '/tech/ts.svg',
     name: 'Typescript',
     width: 51.94,
     height: 51.94,
   },
   {
     key: 3,
-    img: '/reactjs.svg',
+    img: '/tech/reactjs.svg',
     name: 'Reactjs',
     width: 45.76,
     height: 45.76,
   },
   {
     key: 4,
-    img: '/nextjs.svg',
+    img: '/tech/nextjs.svg',
     name: 'Nextjs',
     width: 43.28,
     height: 43.28,
   },
   {
     key: 5,
-    img: '/tailwindcss.svg',
+    img: '/tech/tailwindcss.svg',
     name: 'TailwindCss',
     width: 51.94,
     height: 30.92,
   },
   {
     key: 6,
-    img: '/mssql.svg',
+    img: '/tech/mssql.svg',
     name: 'Microsoft SQL Server',
     width: 51.94,
     height: 51.94,
   },
   {
     key: 7,
-    img: '/dotnetcore.svg',
+    img: '/tech/dotnetcore.svg',
     name: '.Net Core',
     width: 69.25,
     height: 69.25,
@@ -91,7 +91,7 @@ const TechnologyList = () => (
 );
 
 const Span = ({ name }: { name: string }) => (
-  <span className="text-white font-space_Grotesk font-medium"> {name} </span>
+  <span className="text-white font-space_Grotesk font-medium"> {name}</span>
 );
 export default function Technologies() {
   return (
@@ -101,8 +101,8 @@ export default function Technologies() {
       <p className="text-center mt-10">
         Other technologies I used are <Span name="React Native" />,
         <Span name="Nodejs" />,
-        <Span name="Express" />, <Span name="Git" />, <Span name="Postman" />
-        and <Span name="Figma" />.
+        <Span name="Express" />,<Span name="Git" />, <Span name="Postman" /> and{' '}
+        <Span name="Figma" />.
       </p>
     </Section>
   );

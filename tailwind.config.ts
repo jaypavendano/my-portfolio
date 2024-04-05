@@ -14,15 +14,16 @@ const config = {
       center: true,
       padding: '20px',
       screens: {
-        lg: '1440px',
+        lg: '1240px',
       },
     },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         ellipse: "url('/ellipse.png')",
+        'gradient-linear-right':
+          'linear-gradient(227deg, rgba(17,16,16,1) 35%, rgba(36,36,36,1) 100%);',
+        'gradient-linear-left':
+          'linear-gradient(135deg, rgba(17,16,16,1) 35%, rgba(36,36,36,1) 100%);',
       },
       colors: {
         primary: '#00D8FF',

@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="bg-ellipse bg-no-repeat bg-center bg-auto">
+    <section className="bg-ellipse bg-no-repeat bg-center bg-auto">
       <div className="container min-h-screen grid items-center content-center max-w-3xl gap-y-8">
         <div>
           <h3 className="text-2xl text-white">hey there 👋, my name is</h3>
@@ -13,6 +13,6 @@ export default function Banner() {
           and adept at creating API-driven products.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

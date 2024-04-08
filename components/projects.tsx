@@ -3,6 +3,7 @@
 import { Section, SectionTitle } from '@/app/constant';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { FiExternalLink } from 'react-icons/fi';
 
 interface ProjectDataTypes {
   key: number;
@@ -11,6 +12,7 @@ interface ProjectDataTypes {
   description: string;
   img: string;
   techStack: string[];
+  externalLink: string;
 }
 
 const projects: ProjectDataTypes[] = [
@@ -19,7 +21,7 @@ const projects: ProjectDataTypes[] = [
     subTitle: 'Website Application',
     title: 'Casa Almarenzo Booking ',
     description:
-      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+      'Revamping the Casa Almarenzo Bed & Breakfast booking web application, including the website app and admin panel, by transitioning it from PHP to reactjs, resulting in improved performance, enchanced use experience, and easier maintenance.',
     img: '/projects/casabooking.png',
     techStack: [
       'Reactjs',
@@ -29,13 +31,14 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
+    externalLink: 'https://casabooking.comlogikph.com/',
   },
   {
     key: 2,
     subTitle: 'Website Application',
     title: 'Metro Lemery Medical Center',
     description:
-      'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+      'I developed a website for Metro Lemery Medical Center, featuring an appointment system, online test results, HMO approval system, and patient & doctor portals. I designed and implemented the entire website, handling both front-end and back-end development',
     img: '/projects/mlmc.png',
     techStack: [
       'Nextjs',
@@ -45,6 +48,7 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
+    externalLink: 'https://newsite.mlmc.com.ph/',
   },
 ];
 
@@ -89,9 +93,20 @@ const ProjectList = () => {
                   >
                     <p className="md:p-6 text-left">{project.description}</p>
                   </div>
-                  <p className="text-sm mb-10">
-                    {project.techStack.join(' - ')}
-                  </p>
+
+                  <div className="grid gap-y-5 mb-10">
+                    <p className="text-sm ">{project.techStack.join(' - ')}</p>
+
+                    <a
+                      href={project.externalLink}
+                      target="_blank"
+                      className={`md:grid ${
+                        isEven ? 'justify-items-end' : 'justify-items-start'
+                      }`}
+                    >
+                      <FiExternalLink className="text-xl" />
+                    </a>
+                  </div>
                 </div>
 
                 <div

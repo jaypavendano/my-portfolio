@@ -9,23 +9,23 @@ export default function Contact() {
 
   let message = inInNeedOfJob ? (
     <>
-      I’m{' '}
-      <span className=" text-primary">
-        not currently seeking new opportunities at the moment
-      </span>
-      , but my inbox is always open. Whether you have a question or just want to
-      say hi, I’ll try my best to get back to you!
-    </>
+    I&apos;m
+    <span className=" text-primary">
+      {' '}
+      actively seeking new opportunities,{' '}
+    </span>
+    and my inbox is always open. Whether you have a question or just want to
+    say hi, I&apos;ll try my best to get back to you!
+  </>
   ) : (
     <>
-      I&apos;m
-      <span className=" text-primary">
-        {' '}
-        actively seeking new opportunities,{' '}
-      </span>
-      and my inbox is always open. Whether you have a question or just want to
-      say hi, I’ll try my best to get back to you!
-    </>
+     I&apos;m{' '}
+    <span className=" text-primary">
+      not currently seeking new opportunities at the moment
+    </span>
+    , but my inbox is always open. Whether you have a question or just want to
+    say hi, I&apos;ll try my best to get back to you!
+  </>
   );
   return (
     <Section styles="bg-ellipse bg-no-repeat bg-center bg-auto">

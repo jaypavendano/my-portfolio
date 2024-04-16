@@ -48,7 +48,7 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
-    externalLink: 'https://newsite.mlmc.com.ph/',
+    externalLink: 'https://new.mlmc.com.ph/',
   },
 ];
 

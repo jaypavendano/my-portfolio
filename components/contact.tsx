@@ -9,23 +9,23 @@ export default function Contact() {
 
   let message = inInNeedOfJob ? (
     <>
-    I&apos;m
-    <span className=" text-primary">
-      {' '}
-      actively seeking new opportunities,{' '}
-    </span>
-    and my inbox is always open. Whether you have a question or just want to
-    say hi, I&apos;ll try my best to get back to you!
-  </>
+      I&apos;m
+      <span className=" text-primary">
+        {' '}
+        actively seeking new opportunities,{' '}
+      </span>
+      and my inbox is always open. Whether you have a question or just want to
+      say hi, I&apos;ll try my best to get back to you!
+    </>
   ) : (
     <>
-     I&apos;m{' '}
-    <span className=" text-primary">
-      not currently seeking new opportunities at the moment
-    </span>
-    , but my inbox is always open. Whether you have a question or just want to
-    say hi, I&apos;ll try my best to get back to you!
-  </>
+      I&apos;m{' '}
+      <span className=" text-primary">
+        not currently seeking new opportunities at the moment
+      </span>
+      , but my inbox is always open. Whether you have a question or just want to
+      say hi, I&apos;ll try my best to get back to you!
+    </>
   );
   return (
     <Section styles="bg-ellipse bg-no-repeat bg-center bg-auto">
@@ -43,7 +43,7 @@ export default function Contact() {
           <div className="grid justify-center">
             <a
               href="mailto:jaypavendano@gmail.com"
-              className="group relative inline-flex items-center justify-center overflow-hidden border-2 border-primary p-4 px-6 py-3 font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
+              className="group relative inline-flex items-center justify-center overflow-hidden border-2 border-primary p-4 px-6 py-3 font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:shadow-inner hover:shadow-primary"
             >
               <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-primary text-white duration-300 group-hover:translate-x-0">
                 <HiOutlineMail className="font-extrabold text-2xl" />

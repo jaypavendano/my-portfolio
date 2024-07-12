@@ -22,7 +22,7 @@ const projects: ProjectDataTypes[] = [
     title: 'Casa Almarenzo Booking ',
     description:
       'Revamping the Casa Almarenzo Bed & Breakfast booking web application, including the website app and admin panel, by transitioning it from PHP to reactjs, resulting in improved performance, enchanced use experience, and easier maintenance.',
-    img: '/projects/casabooking.png',
+    img: '/projects/casabooking.webp',
     techStack: [
       'Reactjs',
       'Javascript',
@@ -39,7 +39,7 @@ const projects: ProjectDataTypes[] = [
     title: 'Metro Lemery Medical Center',
     description:
       'I developed a website for Metro Lemery Medical Center, featuring an appointment system, online test results, HMO approval system, and patient & doctor portals. I designed and implemented the entire website, handling both front-end and back-end development',
-    img: '/projects/mlmc.png',
+    img: '/projects/mlmc.webp',
     techStack: [
       'Nextjs',
       'Typescript',
@@ -126,7 +126,6 @@ const ProjectList = () => {
                         objectFit: 'cover',
                         objectPosition: 'top',
                       }}
-                      quality={50}
                     />
                   </div>
                 </div>

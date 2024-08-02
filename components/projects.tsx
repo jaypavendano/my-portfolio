@@ -140,7 +140,7 @@ const ProjectList = () => {
 export default function Projects() {
   return (
     <Section>
-      <p className="hidden">
+      <p className="sr-only">
         inspired by :{' '}
         <a href="https://v4.brittanychiang.com/">
           Brittany Chiang website portfolio

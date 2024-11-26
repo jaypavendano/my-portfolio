@@ -12,7 +12,7 @@ interface ProjectDataTypes {
   description: string;
   img: string;
   techStack: string[];
-  externalLink: string;
+  externalLink?: string;
 }
 
 const projects: ProjectDataTypes[] = [
@@ -31,7 +31,6 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
-    externalLink: 'https://casabooking.comlogikph.com/',
   },
   {
     key: 2,
@@ -48,7 +47,6 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
-    externalLink: 'https://new.mlmc.com.ph/',
   },
 ];
 
@@ -97,15 +95,17 @@ const ProjectList = () => {
                   <div className="grid gap-y-5 mb-10">
                     <p className="text-sm ">{project.techStack.join(' - ')}</p>
 
-                    <a
-                      href={project.externalLink}
-                      target="_blank"
-                      className={`md:grid ${
-                        isEven ? 'justify-items-end' : 'justify-items-start'
-                      }`}
-                    >
-                      <FiExternalLink className="text-xl" />
-                    </a>
+                    {project.externalLink && (
+                      <a
+                        href={project.externalLink}
+                        target="_blank"
+                        className={`md:grid ${
+                          isEven ? 'justify-items-end' : 'justify-items-start'
+                        }`}
+                      >
+                        <FiExternalLink className="text-xl" />
+                      </a>
+                    )}
                   </div>
                 </div>
 

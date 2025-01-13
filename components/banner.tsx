@@ -24,7 +24,7 @@ export default function Banner() {
         </p>
         <div>
           <a
-            href="https://drive.google.com/file/d/1JbrggYSB8On1TIX1uJIrOp016uNE2Zxx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1kP2Ij5DyEY5ARgKVZy1u5_0O3j-74ove/view?usp=sharing"
             target="_blank"
             className="group relative inline-flex items-center justify-center overflow-hidden border-2 border-primary p-3 px-4 py-2 font-medium text-indigo-600 shadow-md transition duration-300 ease-out hover:shadow-inner hover:shadow-primary"
           >

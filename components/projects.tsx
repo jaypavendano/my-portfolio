@@ -34,7 +34,7 @@ const projects: ProjectDataTypes[] = [
   },
   {
     key: 2,
-    subTitle: 'Website Application',
+    subTitle: 'Website',
     title: 'Metro Lemery Medical Center',
     description:
       'I developed a website for Metro Lemery Medical Center, featuring an appointment system, online test results, HMO approval system, and patient & doctor portals. I designed and implemented the entire website, handling both front-end and back-end development',
@@ -47,6 +47,32 @@ const projects: ProjectDataTypes[] = [
       '.Net Core',
       'SQL',
     ],
+  },
+  {
+    key: 3,
+    subTitle: 'Website',
+    title: 'Next Health Diagnostics',
+    description:
+      'I developed the front-end of the Next Health Diagnostic website, focusing on delivering a modern, user-friendly interface for booking diagnostic services, viewing lab results, and managing patient profiles. I also contributed to the back-end development, helping integrate core features and optimize overall system performance.',
+    img: '/projects/nexthealth.webp',
+    techStack: [
+      'Nextjs',
+      'Typescript',
+      'Tailwind',
+      'Ant Design',
+      '.Net Core',
+      'SQL',
+    ],
+    externalLink: 'https://nexthealth.ph/',
+  },
+  {
+    key: 4,
+    subTitle: 'Website',
+    title: 'EChartingMD',
+    description:
+      'I led the end-to-end development of an E-Charting application for hospitals and clinics, handling the front-end, back-end, system flow, and UI/UX design. The application allows healthcare professionals to efficiently record, manage, and access patient records, doctor’s orders, progress notes, lab requests, and more, streamlining clinical workflows and improving patient care.',
+    img: '/projects/echarting.webp',
+    techStack: ['Nextjs', 'Typescript', 'Tailwind', 'Shadcn', 'SQL'],
   },
 ];
 
